@@ -1,0 +1,5 @@
+Custom avatars in VRLegs take a different approach to bind a new mesh onto a player, using the same bones as a already existing armature in the game, requiring retargeting new meshes to the in-game bone hirearchy. This process takes a while, and I would reccomend using blender to do this process.
+
+The head can interfere with the player view, so we do the same thing that the game does, seperating the head from the body. For automatic hiding, the head mesh is required to be called "HeadLocalHidden". The head mesh will still show up for other players and inside game mirrors and cameras just fine.
+
+I will give a unity project for making them soon. Requires Unity 2022.3.62f3.

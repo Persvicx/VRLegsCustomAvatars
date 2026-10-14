@@ -1,0 +1,31 @@
+Avatar data is stored in a avatar_metadata.json format and is parsed by the client when the bundle is loaded.
+
+This is a example of the avatar_metadata.json from aechmoth.
+
+{
+  "AvatarID": "aechmoth",
+  "Name": "Aech's Moth",
+  "Description": "Aech's Moth OC",
+  "Version": "1",
+  "TargetAvatar": "Pulse(Clone)",
+  "TargetAvatarID": "9999",
+  "BrotOffset": {
+    "x": 90.0,
+    "y": -180.0,
+    "z": 0.0
+  }
+}
+
+AvatarID: The AvatarID is a crucial part in the networking process, as this ID is advertised to other clients, and if the ID and Version match in a bundle, it is applied to the networked player. Reccomended to be lowercase with no spaces.
+
+Name: The name of the avatar.
+
+Description: The description of the avatar.
+
+Version: The version of the avatar. The avatar will only bind to other players if they're using the same version.
+
+TargetAvatar: The name of the in-game avatar that will be targeted and hidden and the binded avatar parented to.
+
+TargetAvatarID: Used to switch the player to the required avatar automatically when starting binding locally.
+
+BrotOffset: x, y and z values used to rotate all the bones in the body, fixing incorrect bone rotation on the client.
