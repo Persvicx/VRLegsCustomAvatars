@@ -1,2 +1,2 @@
-# VRLegsCustomAvatars
-Custom Avatars repository and storage for online syncing to game clients of avatars, automating the process and making moving files completely optional.
+# VRLegs Custom Avatars
+This repository contains custom avatar .bundle files that are downloaded by the client automatically, and documentation on how they're made.
